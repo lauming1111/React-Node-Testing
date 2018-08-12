@@ -1,0 +1,13 @@
+.avatar {
+  border: 1.5px solid white;
+  box-shadow: 0 0px 3px rgba(0, 0, 0, 0.5);
+  width: 64px;
+  height: 64px;
+  border-radius: 64px;
+}
+
+.card .avatar {
+  position: absolute;
+  top: -25px;
+  left: 117.5px;
+}
