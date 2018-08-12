@@ -16,21 +16,22 @@ export const ProfileCard = (props) => {
                 <center className="user-name">{props.data.name.first + ' ' + props.data.name.last}</center>
                 <center className="company-name">{props.data.company}</center>
                 <center className="company-address">{props.data.address}</center>
-                <center>
-                    <Popconfirm title={props.data.phone} icon={<Icon type="phone"/>}>
+                <div>
+                    <Popconfirm className="company-address1" title={props.data.phone} icon={<Icon type="phone"/>}>
                         <Icon type="phone"/>
                     </Popconfirm>
+
                     <Popconfirm title={<a href={"mailto:" + props.data.email}>{props.data.email}</a>}
-                                icon={<Icon type="mail"/>}>
+                                icon={<Icon type="mail"/>} >
                         <Icon type="mail"/>
                     </Popconfirm>
-                </center>
-            </div>
-            <div className="about">
-                <span>About</span>
-                <p>{props.data.about}</p>
-                <span className="data-registered">{props.data.registered}</span>
+                </div>
+                <div className="about">
+                    <span>About</span>
+                    <p>{props.data.about}</p>
+                    <span className="data-registered">{props.data.registered}</span>
+                </div>
             </div>
         </div>
     )
-}
+};

@@ -32,6 +32,10 @@
   color: #979797;
 }
 
+.company-address1 {
+  padding-right: 10%;
+}
+
 .card .about {
   border-top: 2px solid #F5F9FC;
   padding: 10px 15px;
